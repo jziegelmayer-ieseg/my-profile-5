@@ -1,0 +1,38 @@
+html {
+	box-sizing: border-box; /* Create a box way more easier to seperate in 2 parts (left and right for profile and skills) - border-box get the same html size (child container in parent container)*/
+
+}
+
+* { /* Select all elements of the page and */
+	box-sizing: inherit; /* apply more flexibility to the child container */
+}
+
+/* typo */
+ 
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+} /* margin and padding 0 for all div, ul, li, ... to get all of them at the left of there positions*/
+
+.row {
+	margin: auto; /* Row adapted to the container size */
+	display: table;
+}
+
+[class*="col-"] { /* all classes started by "col-" */
+	float: left; /* The col- classes must float on the left side of the block containing it (profile on the left size) */
+	padding: 0 20px;
+}
+
+.col-six {
+	width: 50%; 
+}

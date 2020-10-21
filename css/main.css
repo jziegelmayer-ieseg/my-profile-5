@@ -1,0 +1,140 @@
+html {
+	font-size: 10px; /* Size of all html features*/
+}
+
+body {
+	line-height: 30px; /* Size variation between all lines */
+}
+
+.skill { 
+	list-style: none; /* No bullet points */
+	margin: 50px 0 10px; /* Distance variation between 1/the bottom of <p> Organising... and the begining  of skill class 2/ Same place than <p> 3/ Distance from button to last class */
+}
+.skill li { /* Size variation between all lines */
+	height: 5px;
+	margin-bottom: 60px;
+	position: relative; /* Allow place variation of the class */
+}
+.skill li strong { /* Allow features modification what's in <li> and it's <strong> */
+	position: absolute;
+	top: -30px; 
+	font-family: "poppins-bold", sans-serif;
+	color: #313131; 
+	text-transform: uppercase; /* All simple letters becomes uppercase letters */
+	letter-spacing: 3px;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+/* common styles  */
+
+.section-intro {
+	max-width: 700px; /* Resize */
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 36px;
+	position: relative;
+}
+.section-intro h1 {
+	font-family: "poppins-semibold", serif;
+	font-size: 36px;
+	color: #313131;
+	line-height: 1.25;
+	margin-bottom: 12px;
+}
+.section-intro h5 {
+	color: #FF0077;
+	font-size: 16px;
+	line-height: 1.875;
+	margin-bottom: 3px;
+	letter-spacing: 4px;
+}
+
+/* 	responsive:
+	common styles */
+
+@media only screen and (max-width:768px) { /* Resize class section-intro to 650px and h1 to 3px for all screens less than 768px */
+	.section-intro {
+		max-width: 650px;
+	}
+	.section-intro h1 {
+		font-size: 3px;
+	}
+}
+@media only screen and (max-width:600px) {
+	.section-intro h1 {
+		font-size: 3px;
+	}
+	.section-intro h5 {
+		font-size: 15px;
+		letter-spacing: 3px;
+	}
+}
+@media only screen and (max-width:400px) {
+	.section-intro h1 {
+		font-size: 24px;
+	}
+}
+
+/* about */
+
+#about .section-intro { /* target a single specific element with the unique id which is about in class section-intro */
+	margin-bottom: 3px;
+}
+
+.intro-info {
+	margin-top: 42px;
+	margin-right: -30px;
+	margin-left: -30px;
+}
+.intro-info img { /* Class features variation for image */
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	margin: 9px 0 0 0;
+	float: left;
+}
+.intro-info .separation { /* Same features for both classes */
+	text-align: left;
+	padding-left: 130px;
+}
+
+.about-content {
+	position: relative;
+	text-align: left;
+	max-width: 850px;
+	margin-bottom: 36px;
+}
+.about-content h3 {
+	font-family: "poppins-bold", sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+}
+
+.about-content .info-list {
+	list-style: none;
+	margin-left: 0;
+}
+
+.about-content .info-list li {
+	padding: 0 0 8px 0;
+}
+
+.about-content .info-list li strong {
+	font-family: "poppins-bold", sans-serif;
+	color: #313131;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.about-content .info-list li span {
+	display: block;
+	font-family: "poppins-regular", sans-serif;
+	color: #888888;
+	font-size: 15px;
+	line-height: 1;
+}
